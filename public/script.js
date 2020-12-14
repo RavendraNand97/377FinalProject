@@ -261,7 +261,7 @@ function poilceData() {
        const markP = L.marker([holderpolice[i].lat, holderpolice[i].lon], {
         icon: polIcon,
       }).addTo(ourmap)
-      markP.bindPopup(holderpolice[i].name + " Police Station").openPopup(); //Add description of Police.
+      markP.bindPopup(holderpolice[i].name + " Police Station<br />Phone#: " + holderpolice[i].phone).openPopup(); //Add description of Police.
       
     }
   }return markP;
@@ -293,7 +293,7 @@ function hospitalData() {
       const markhos = L.marker([holderhospital[i].lat, holderhospital[i].lon], {
         icon: hosIcon,
       }).addTo(ourmap);
-      markhos.bindPopup(holderhospital[i].name + " Hospital").openPopup(); //Add description of Police.
+      markhos.bindPopup(holderhospital[i].name + " Hospital<br />Phone#: " + holderhospital[i].phone).openPopup(); //Add description of Police.
     }
   }
 }
